@@ -6,5 +6,3 @@
 
 ![logo do python](python.png)
 
-
-
