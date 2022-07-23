@@ -1,7 +1,5 @@
-import views.formulario as formulario
-
-formulario.formulario_login()
+import controllers.validacao as controller
 
 
-
+controller.iniciar()
 

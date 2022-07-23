@@ -1,5 +1,7 @@
 # Controller - a validação
 import models.banco as banco
+import views.formulario as view
+
 def validar_login(usuario_digitado, senha_digitado):
     usuario_BD = banco.model_usuario()
     senha_BD = banco.model_senha()
@@ -7,3 +9,6 @@ def validar_login(usuario_digitado, senha_digitado):
         print("pode entrar")
     else: 
         print("usuário ou senha inválido")
+
+def iniciar():
+    view.formulario_login()
