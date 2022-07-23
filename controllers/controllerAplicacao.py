@@ -20,9 +20,14 @@ def iniciar():
 def opcoes_menu():
     opcao = view.menu()
     if opcao == "1":
-        print("Cadastro de clientes")
+        cadastrar_clientes()
     elif opcao == "2":
         print("Listagem de clientes")
     else:
         view.exibir_mensagem("Sistema Finalizado")
         exit()
+
+def cadastrar_clientes():
+    cliente = view.cadastro_clientes()
+    banco.model_cadastro_cliente(cliente)
+    
