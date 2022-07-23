@@ -1,5 +1,5 @@
 # Controller - a validação
-import banco
+import models.banco as banco
 def validar_login(usuario_digitado, senha_digitado):
     usuario_BD = banco.model_usuario()
     senha_BD = banco.model_senha()
