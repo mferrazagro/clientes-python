@@ -17,5 +17,5 @@ def model_senha():
     senha_BD = usuario_senha[1]
     return senha_BD
     
-print(model_usuario(), model_senha())
+
 
